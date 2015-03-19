@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -o "C:/Users/Jacob/Desktop/Thesis/spi/SPI/spi_master_isim_beh.exe" -prj "C:/Users/Jacob/Desktop/Thesis/spi/SPI/spi_master_beh.prj" "work.spi_master" 

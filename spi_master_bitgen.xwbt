@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\Jacob\Desktop\Thesis\spi\SPI\spi_master.ncd
-OUTFILE=C:\Users\Jacob\Desktop\Thesis\spi\SPI\spi_master.bit
-FAMILY=Spartan3E
-PART=xc3s500e-4fg320
-WORKINGDIR=C:\Users\Jacob\Desktop\Thesis\spi\SPI
-LICENSE=WebPack
-USER_INFO=210943588_0_0_458
