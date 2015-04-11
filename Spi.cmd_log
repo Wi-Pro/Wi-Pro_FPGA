@@ -239,3 +239,7 @@ xst -intstyle ise -ifn "C:/Users/Jacob/Dropbox/Senior Thesis Proposal/FPGA Code/
 xst -intstyle ise -ifn "C:/Users/Jacob/Dropbox/Senior Thesis Proposal/FPGA Code/SPIII/Spi.xst" -ofn "C:/Users/Jacob/Dropbox/Senior Thesis Proposal/FPGA Code/SPIII/Spi.syr" 
 ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spi.ucf -p xc3s500e-fg320-4 "Spi.ngc" Spi.ngd  
 xst -intstyle ise -ifn "C:/Users/Adam Vogel/Dropbox/Senior Thesis Proposal/FPGA Code/SPIII/Spi.xst" -ofn "C:/Users/Adam Vogel/Dropbox/Senior Thesis Proposal/FPGA Code/SPIII/Spi.syr" 
+xst -intstyle ise -ifn "C:/Users/Adam Vogel/Dropbox/Wi-Pro_FPGA/Spi.xst" -ofn "C:/Users/Adam Vogel/Dropbox/Wi-Pro_FPGA/Spi.syr" 
+xst -intstyle ise -ifn "C:/Users/Adam Vogel/Dropbox/Wi-Pro_FPGA/Spi.xst" -ofn "C:/Users/Adam Vogel/Dropbox/Wi-Pro_FPGA/Spi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Spi.ucf -p xc3s50an-tqg144-4 "Spi.ngc" Spi.ngd  
+xst -intstyle ise -ifn "C:/Users/Adam Vogel/Dropbox/Wi-Pro_FPGA/Spi.xst" -ofn "C:/Users/Adam Vogel/Dropbox/Wi-Pro_FPGA/Spi.syr" 

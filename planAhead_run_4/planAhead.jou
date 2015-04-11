@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.6 (64-bit)
+# Build 269223 by xbuild on Wed Jun  5 11:14:03 MDT 2013
+# Start of session at: Sat Mar 28 01:06:55 2015
+# Process ID: 9624
+# Log file: C:/Users/Adam Vogel/Dropbox/Wi-Pro_FPGA/planAhead_run_4/planAhead.log
+# Journal file: C:/Users/Adam Vogel/Dropbox/Wi-Pro_FPGA/planAhead_run_4/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {C:/Users/Adam Vogel/Dropbox/Wi-Pro_FPGA/pa.fromNetlist.tcl}

@@ -1,0 +1,77 @@
+#-----------------------------------------------------------
+# PlanAhead v14.6 (64-bit)
+# Build 269223 by xbuild on Wed Jun  5 11:14:03 MDT 2013
+# Start of session at: Sat Mar 28 01:01:17 2015
+# Process ID: 10764
+# Log file: C:/Users/Adam Vogel/Dropbox/Wi-Pro_FPGA/planAhead_run_3/planAhead.log
+# Journal file: C:/Users/Adam Vogel/Dropbox/Wi-Pro_FPGA/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Common 17-86] Your PlanAhead license expires in -208 day(s)
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.6/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.6/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.6/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source {C:/Users/Adam Vogel/Dropbox/Wi-Pro_FPGA/pa.fromNetlist.tcl}
+# create_project -name SPIII -dir "C:/Users/Adam Vogel/Dropbox/Wi-Pro_FPGA/planAhead_run_3" -part xc3s500efg320-4
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "C:/Users/Adam Vogel/Dropbox/Wi-Pro_FPGA/Spi.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {C:/Users/Adam Vogel/Dropbox/Wi-Pro_FPGA} }
+# set_param project.pinAheadLayout  yes
+# set_property target_constrs_file "Spi.ucf" [current_fileset -constrset]
+Adding file 'C:/Users/Adam Vogel/Dropbox/Wi-Pro_FPGA/Spi.ucf' to fileset 'constrs_1'
+# add_files [list {Spi.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc3s500efg320-4
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design Spi.ngc ...
+WARNING:NetListWriters:298 - No output is written to Spi.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file Spi.edif ...
+ngc2edif: Total memory usage is 87632 kilobytes
+
+Parsing EDIF File [./planAhead_run_3/SPIII.data/cache/Spi_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_3/SPIII.data/cache/Spi_ngc_zx.edif]
+INFO: [Designutils 20-910] Reading macro library C:/Xilinx/14.6/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [C:/Xilinx/14.6/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [C:/Xilinx/14.6/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+WARNING: [Netlist 29-43] Netlist 'Spi' is not ideal for floorplanning, since the cellview 'Spi' defined in file 'Spi.ngc' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+Loading clock regions from C:/Xilinx/14.6/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.6/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockBuffers.xml
+Loading package from C:/Xilinx/14.6/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/Package.xml
+Loading io standards from C:/Xilinx/14.6/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from C:/Xilinx/14.6/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/SSORules.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.6/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library C:/Xilinx/14.6/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+INFO: [Timing 38-34] Done reading timing library C:/Xilinx/14.6/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+Parsing UCF File [C:/Users/Adam Vogel/Dropbox/Wi-Pro_FPGA/Spi.ucf]
+WARNING: [Constraints 18-7] Clock terminal SCK is located on a non-clock IO location L13 this can produce sub-optimal results [C:/Users/Adam Vogel/Dropbox/Wi-Pro_FPGA/Spi.ucf:2]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'CN[0]' [C:/Users/Adam Vogel/Dropbox/Wi-Pro_FPGA/Spi.ucf:6]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'CN[1]' [C:/Users/Adam Vogel/Dropbox/Wi-Pro_FPGA/Spi.ucf:7]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'MIC' [C:/Users/Adam Vogel/Dropbox/Wi-Pro_FPGA/Spi.ucf:9]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'ZIF' [C:/Users/Adam Vogel/Dropbox/Wi-Pro_FPGA/Spi.ucf:10]
+Finished Parsing UCF File [C:/Users/Adam Vogel/Dropbox/Wi-Pro_FPGA/Spi.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 29fa7742
+link_design: Time (s): elapsed = 00:00:17 . Memory (MB): peak = 558.434 ; gain = 136.582
+set_property package_pin "" [get_ports [list  CS]]
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+ (See C:/Users/Adam Vogel/Dropbox/Wi-Pro_FPGA\planAhead_pid10764.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Sat Mar 28 01:02:43 2015...
+INFO: [Common 17-83] Releasing license: PlanAhead

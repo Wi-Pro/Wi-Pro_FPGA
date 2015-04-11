@@ -80,9 +80,8 @@ reg [7:0] SPIData37;
 reg [7:0] SPIData38;
 reg [7:0] SPIData39;
 
-
-
-reg [6:0] i;
+reg [6:0] i = 0;
+reg [3:0] count = 0;
 
 reg A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10,
 A11, A12, A13, A14, A15, A16, A17, A18, A19, A20,
@@ -178,343 +177,353 @@ assign ZIF37 = ( (!WR && (SPIData37[1:0] == 2)) || (SPIData37[1:0] == 1) ) ? A37
 assign ZIF38 = ( (!WR && (SPIData38[1:0] == 2)) || (SPIData38[1:0] == 1) ) ? A38 : 'bz;
 assign ZIF39 = ( (!WR && (SPIData39[1:0] == 2)) || (SPIData39[1:0] == 1) ) ? A39 : 'bz;
 
+
 always@(posedge SCK)
 	begin
 		if(CS == 0)
 			begin
-				for (i = 0; i < 40; i = i + 1) 
+				if (MOSI == 1)
 					begin
-						if (MOSI == 1)
-							begin
-								case(i)								
-									0 : 
-										begin
-											SPIData0 = ((SPIData0 >> 1) | 128) ;
-										end
-									1 : 
-										begin
-											SPIData1 = ((SPIData1 >> 1) | 128) ;
-										end
-									2 : 
-										begin
-											SPIData2 = ((SPIData2 >> 1) | 128) ;
-										end
-									3 : 
-										begin
-											SPIData3 = ((SPIData3 >> 1) | 128) ;
-										end
-									4 : 
-										begin
-											SPIData4 = ((SPIData4 >> 1) | 128) ;
-										end
-									5 : 
-										begin
-											SPIData5 = ((SPIData5 >> 1) | 128) ;
-										end
-									6 : 
-										begin
-											SPIData6 = ((SPIData6 >> 1) | 128) ;
-										end
-									7 : 
-										begin
-											SPIData7 = ((SPIData7 >> 1) | 128) ;
-										end
-									8 : 
-										begin
-											SPIData8 = ((SPIData8 >> 1) | 128) ;
-										end
-									9 : 
-										begin
-											SPIData9 = ((SPIData9 >> 1) | 128) ;
-										end
-									10 : 
-										begin
-											SPIData10 = ((SPIData10 >> 1) | 128) ;
-										end
-									11 : 
-										begin
-											SPIData11 = ((SPIData11 >> 1) | 128) ;
-										end
-									12 : 
-										begin
-											SPIData12 = ((SPIData12 >> 1) | 128) ;
-										end
-									13 : 
-										begin
-											SPIData13 = ((SPIData13 >> 1) | 128) ;
-										end
-									14 : 
-										begin
-											SPIData14 = ((SPIData14 >> 1) | 128) ;
-										end
-									15 : 
-										begin
-											SPIData15 = ((SPIData15 >> 1) | 128) ;
-										end
-									16 : 
-										begin
-											SPIData16 = ((SPIData16 >> 1) | 128) ;
-										end
-									17 : 
-										begin
-											SPIData17 = ((SPIData17 >> 1) | 128) ;
-										end
-									18 : 
-										begin
-											SPIData18 = ((SPIData18 >> 1) | 128) ;
-										end
-									19 : 
-										begin
-											SPIData19 = ((SPIData19 >> 1) | 128) ;
-										end
-									20 : 
-										begin
-											SPIData20 = ((SPIData20 >> 1) | 128) ;
-										end
-									21 : 
-										begin
-											SPIData21 = ((SPIData21 >> 1) | 128) ;
-										end
-									22 : 
-										begin
-											SPIData22 = ((SPIData22 >> 1) | 128) ;
-										end
-									23 : 
-										begin
-											SPIData23 = ((SPIData23 >> 1) | 128) ;
-										end
-									24 : 
-										begin
-											SPIData24 = ((SPIData24 >> 1) | 128) ;
-										end
-									25 : 
-										begin
-											SPIData25 = ((SPIData25 >> 1) | 128) ;
-										end
-									26 : 
-										begin
-											SPIData26 = ((SPIData26 >> 1) | 128) ;
-										end
-									27 : 
-										begin
-											SPIData27 = ((SPIData27 >> 1) | 128) ;
-										end
-									28 : 
-										begin
-											SPIData28 = ((SPIData28 >> 1) | 128) ;
-										end
-									29 : 
-										begin
-											SPIData29 = ((SPIData29 >> 1) | 128) ;
-										end
-									30 : 
-										begin
-											SPIData30 = ((SPIData30 >> 1) | 128) ;
-										end
-									31 : 
-										begin
-											SPIData31 = ((SPIData31 >> 1) | 128) ;
-										end
-									32 : 
-										begin
-											SPIData32 = ((SPIData32 >> 1) | 128) ;
-										end
-									33 : 
-										begin
-											SPIData33 = ((SPIData33 >> 1) | 128) ;
-										end
-									34 : 
-										begin
-											SPIData34 = ((SPIData34 >> 1) | 128) ;
-										end
-									35 : 
-										begin
-											SPIData35 = ((SPIData35 >> 1) | 128) ;
-										end
-									36 : 
-										begin
-											SPIData36 = ((SPIData36 >> 1) | 128) ;
-										end
-									37 : 
-										begin
-											SPIData37 = ((SPIData37 >> 1) | 128) ;
-										end
-									38 : 
-										begin
-											SPIData38 = ((SPIData38 >> 1) | 128) ;
-										end
-									39 : 
-										begin
-											SPIData39 = ((SPIData39 >> 1) | 128) ;
-										end
-								endcase
-							end
-						else if (MOSI == 0)
-							begin
-								case(i)								
-									0 : 
-										begin
-											SPIData0 = ((SPIData0 >> 1)) ;
-										end
-									1 : 
-										begin
-											SPIData1 = ((SPIData1 >> 1)) ;
-										end
-									2 : 
-										begin
-											SPIData2 = ((SPIData2 >> 1)) ;
-										end
-									3 : 
-										begin
-											SPIData3 = ((SPIData3 >> 1)) ;
-										end
-									4 : 
-										begin
-											SPIData4 = ((SPIData4 >> 1)) ;
-										end
-									5 : 
-										begin
-											SPIData5 = ((SPIData5 >> 1)) ;
-										end
-									6 : 
-										begin
-											SPIData6 = ((SPIData6 >> 1)) ;
-										end
-									7 : 
-										begin
-											SPIData7 = ((SPIData7 >> 1)) ;
-										end
-									8 : 
-										begin
-											SPIData8 = ((SPIData8 >> 1)) ;
-										end
-									9 : 
-										begin
-											SPIData9 = ((SPIData9 >> 1)) ;
-										end
-									10 : 
-										begin
-											SPIData10 = ((SPIData10 >> 1)) ;
-										end
-									11 : 
-										begin
-											SPIData11 = ((SPIData11 >> 1)) ;
-										end
-									12 : 
-										begin
-											SPIData12 = ((SPIData12 >> 1)) ;
-										end
-									13 : 
-										begin
-											SPIData13 = ((SPIData13 >> 1)) ;
-										end
-									14 : 
-										begin
-											SPIData14 = ((SPIData14 >> 1)) ;
-										end
-									15 : 
-										begin
-											SPIData15 = ((SPIData15 >> 1)) ;
-										end
-									16 : 
-										begin
-											SPIData16 = ((SPIData16 >> 1)) ;
-										end
-									17 : 
-										begin
-											SPIData17 = ((SPIData17 >> 1)) ;
-										end
-									18 : 
-										begin
-											SPIData18 = ((SPIData18 >> 1)) ;
-										end
-									19 : 
-										begin
-											SPIData19 = ((SPIData19 >> 1)) ;
-										end
-									20 : 
-										begin
-											SPIData20 = ((SPIData20 >> 1)) ;
-										end
-									21 : 
-										begin
-											SPIData21 = ((SPIData21 >> 1)) ;
-										end
-									22 : 
-										begin
-											SPIData22 = ((SPIData22 >> 1)) ;
-										end
-									23 : 
-										begin
-											SPIData23 = ((SPIData23 >> 1)) ;
-										end
-									24 : 
-										begin
-											SPIData24 = ((SPIData24 >> 1)) ;
-										end
-									25 : 
-										begin
-											SPIData25 = ((SPIData25 >> 1)) ;
-										end
-									26 : 
-										begin
-											SPIData26 = ((SPIData26 >> 1)) ;
-										end
-									27 : 
-										begin
-											SPIData27 = ((SPIData27 >> 1)) ;
-										end
-									28 : 
-										begin
-											SPIData28 = ((SPIData28 >> 1)) ;
-										end
-									29 : 
-										begin
-											SPIData29 = ((SPIData29 >> 1)) ;
-										end
-									30 : 
-										begin
-											SPIData30 = ((SPIData30 >> 1)) ;
-										end
-									31 : 
-										begin
-											SPIData31 = ((SPIData31 >> 1)) ;
-										end
-									32 : 
-										begin
-											SPIData32 = ((SPIData32 >> 1)) ;
-										end
-									33 : 
-										begin
-											SPIData33 = ((SPIData33 >> 1)) ;
-										end
-									34 : 
-										begin
-											SPIData34 = ((SPIData34 >> 1)) ;
-										end
-									35 : 
-										begin
-											SPIData35 = ((SPIData35 >> 1)) ;
-										end
-									36 : 
-										begin
-											SPIData36 = ((SPIData36 >> 1)) ;
-										end
-									37 : 
-										begin
-											SPIData37 = ((SPIData37 >> 1)) ;
-										end
-									38 : 
-										begin
-											SPIData38 = ((SPIData38 >> 1)) ;
-										end
-									39 : 
-										begin
-											SPIData39 = ((SPIData39 >> 1)) ;
-										end
-								endcase
-							end	
+						case(i)								
+							0 : 
+								begin
+									SPIData0 = ((SPIData0 >> 1) | 128) ;
+								end
+							1 : 
+								begin
+									SPIData1 = ((SPIData1 >> 1) | 128) ;
+								end
+							2 : 
+								begin
+									SPIData2 = ((SPIData2 >> 1) | 128) ;
+								end
+							3 : 
+								begin
+									SPIData3 = ((SPIData3 >> 1) | 128) ;
+								end
+							4 : 
+								begin
+									SPIData4 = ((SPIData4 >> 1) | 128) ;
+								end
+							5 : 
+								begin
+									SPIData5 = ((SPIData5 >> 1) | 128) ;
+								end
+							6 : 
+								begin
+									SPIData6 = ((SPIData6 >> 1) | 128) ;
+								end
+							7 : 
+								begin
+									SPIData7 = ((SPIData7 >> 1) | 128) ;
+								end
+							8 : 
+								begin
+									SPIData8 = ((SPIData8 >> 1) | 128) ;
+								end
+							9 : 
+								begin
+									SPIData9 = ((SPIData9 >> 1) | 128) ;
+								end
+							10 : 
+								begin
+									SPIData10 = ((SPIData10 >> 1) | 128) ;
+								end
+							11 : 
+								begin
+									SPIData11 = ((SPIData11 >> 1) | 128) ;
+								end
+							12 : 
+								begin
+									SPIData12 = ((SPIData12 >> 1) | 128) ;
+								end
+							13 : 
+								begin
+									SPIData13 = ((SPIData13 >> 1) | 128) ;
+								end
+							14 : 
+								begin
+									SPIData14 = ((SPIData14 >> 1) | 128) ;
+								end
+							15 : 
+								begin
+									SPIData15 = ((SPIData15 >> 1) | 128) ;
+								end
+							16 : 
+								begin
+									SPIData16 = ((SPIData16 >> 1) | 128) ;
+								end
+							17 : 
+								begin
+									SPIData17 = ((SPIData17 >> 1) | 128) ;
+								end
+							18 : 
+								begin
+									SPIData18 = ((SPIData18 >> 1) | 128) ;
+								end
+							19 : 
+								begin
+									SPIData19 = ((SPIData19 >> 1) | 128) ;
+								end
+							20 : 
+								begin
+									SPIData20 = ((SPIData20 >> 1) | 128) ;
+								end
+							21 : 
+								begin
+									SPIData21 = ((SPIData21 >> 1) | 128) ;
+								end
+							22 : 
+								begin
+									SPIData22 = ((SPIData22 >> 1) | 128) ;
+								end
+							23 : 
+								begin
+									SPIData23 = ((SPIData23 >> 1) | 128) ;
+								end
+							24 : 
+								begin
+									SPIData24 = ((SPIData24 >> 1) | 128) ;
+								end
+							25 : 
+								begin
+									SPIData25 = ((SPIData25 >> 1) | 128) ;
+								end
+							26 : 
+								begin
+									SPIData26 = ((SPIData26 >> 1) | 128) ;
+								end
+							27 : 
+								begin
+									SPIData27 = ((SPIData27 >> 1) | 128) ;
+								end
+							28 : 
+								begin
+									SPIData28 = ((SPIData28 >> 1) | 128) ;
+								end
+							29 : 
+								begin
+									SPIData29 = ((SPIData29 >> 1) | 128) ;
+								end
+							30 : 
+								begin
+									SPIData30 = ((SPIData30 >> 1) | 128) ;
+								end
+							31 : 
+								begin
+									SPIData31 = ((SPIData31 >> 1) | 128) ;
+								end
+							32 : 
+								begin
+									SPIData32 = ((SPIData32 >> 1) | 128) ;
+								end
+							33 : 
+								begin
+									SPIData33 = ((SPIData33 >> 1) | 128) ;
+								end
+							34 : 
+								begin
+									SPIData34 = ((SPIData34 >> 1) | 128) ;
+								end
+							35 : 
+								begin
+									SPIData35 = ((SPIData35 >> 1) | 128) ;
+								end
+							36 : 
+								begin
+									SPIData36 = ((SPIData36 >> 1) | 128) ;
+								end
+							37 : 
+								begin
+									SPIData37 = ((SPIData37 >> 1) | 128) ;
+								end
+							38 : 
+								begin
+									SPIData38 = ((SPIData38 >> 1) | 128) ;
+								end
+							39 : 
+								begin
+									SPIData39 = ((SPIData39 >> 1) | 128) ;
+								end
+						endcase
 					end
+				else if (MOSI == 0)
+					begin
+						case(i)								
+							0 : 
+								begin
+									SPIData0 = ((SPIData0 >> 1)) ;
+								end
+							1 : 
+								begin
+									SPIData1 = ((SPIData1 >> 1)) ;
+								end
+							2 : 
+								begin
+									SPIData2 = ((SPIData2 >> 1)) ;
+								end
+							3 : 
+								begin
+									SPIData3 = ((SPIData3 >> 1)) ;
+								end
+							4 : 
+								begin
+									SPIData4 = ((SPIData4 >> 1)) ;
+								end
+							5 : 
+								begin
+									SPIData5 = ((SPIData5 >> 1)) ;
+								end
+							6 : 
+								begin
+									SPIData6 = ((SPIData6 >> 1)) ;
+								end
+							7 : 
+								begin
+									SPIData7 = ((SPIData7 >> 1)) ;
+								end
+							8 : 
+								begin
+									SPIData8 = ((SPIData8 >> 1)) ;
+								end
+							9 : 
+								begin
+									SPIData9 = ((SPIData9 >> 1)) ;
+								end
+							10 : 
+								begin
+									SPIData10 = ((SPIData10 >> 1)) ;
+								end
+							11 : 
+								begin
+									SPIData11 = ((SPIData11 >> 1)) ;
+								end
+							12 : 
+								begin
+									SPIData12 = ((SPIData12 >> 1)) ;
+								end
+							13 : 
+								begin
+									SPIData13 = ((SPIData13 >> 1)) ;
+								end
+							14 : 
+								begin
+									SPIData14 = ((SPIData14 >> 1)) ;
+								end
+							15 : 
+								begin
+									SPIData15 = ((SPIData15 >> 1)) ;
+								end
+							16 : 
+								begin
+									SPIData16 = ((SPIData16 >> 1)) ;
+								end
+							17 : 
+								begin
+									SPIData17 = ((SPIData17 >> 1)) ;
+								end
+							18 : 
+								begin
+									SPIData18 = ((SPIData18 >> 1)) ;
+								end
+							19 : 
+								begin
+									SPIData19 = ((SPIData19 >> 1)) ;
+								end
+							20 : 
+								begin
+									SPIData20 = ((SPIData20 >> 1)) ;
+								end
+							21 : 
+								begin
+									SPIData21 = ((SPIData21 >> 1)) ;
+								end
+							22 : 
+								begin
+									SPIData22 = ((SPIData22 >> 1)) ;
+								end
+							23 : 
+								begin
+									SPIData23 = ((SPIData23 >> 1)) ;
+								end
+							24 : 
+								begin
+									SPIData24 = ((SPIData24 >> 1)) ;
+								end
+							25 : 
+								begin
+									SPIData25 = ((SPIData25 >> 1)) ;
+								end
+							26 : 
+								begin
+									SPIData26 = ((SPIData26 >> 1)) ;
+								end
+							27 : 
+								begin
+									SPIData27 = ((SPIData27 >> 1)) ;
+								end
+							28 : 
+								begin
+									SPIData28 = ((SPIData28 >> 1)) ;
+								end
+							29 : 
+								begin
+									SPIData29 = ((SPIData29 >> 1)) ;
+								end
+							30 : 
+								begin
+									SPIData30 = ((SPIData30 >> 1)) ;
+								end
+							31 : 
+								begin
+									SPIData31 = ((SPIData31 >> 1)) ;
+								end
+							32 : 
+								begin
+									SPIData32 = ((SPIData32 >> 1)) ;
+								end
+							33 : 
+								begin
+									SPIData33 = ((SPIData33 >> 1)) ;
+								end
+							34 : 
+								begin
+									SPIData34 = ((SPIData34 >> 1)) ;
+								end
+							35 : 
+								begin
+									SPIData35 = ((SPIData35 >> 1)) ;
+								end
+							36 : 
+								begin
+									SPIData36 = ((SPIData36 >> 1)) ;
+								end
+							37 : 
+								begin
+									SPIData37 = ((SPIData37 >> 1)) ;
+								end
+							38 : 
+								begin
+									SPIData38 = ((SPIData38 >> 1)) ;
+								end
+							39 : 
+								begin
+									SPIData39 = ((SPIData39 >> 1)) ;
+								end
+						endcase
+					end	
+					
+					if(count == 7)
+						begin
+							i = i + 1;
+						end
+						
+					if(i == 40)
+						begin
+							i = 0;
+						end
+						
+					count = count + 1;
 			end
 	end
 	
