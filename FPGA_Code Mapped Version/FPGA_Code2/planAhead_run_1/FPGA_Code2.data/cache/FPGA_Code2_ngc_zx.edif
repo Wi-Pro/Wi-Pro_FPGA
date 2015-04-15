@@ -1,0 +1,1741 @@
+(edif FPGA_Code2
+  (edifVersion 2 0 0)
+  (edifLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timestamp 2015 3 28 22 23 41)
+      (program "Xilinx ngc2edif" (version "P.68d"))
+      (author "Xilinx. Inc ")
+      (comment "This EDIF netlist is to be used within supported synthesis tools")
+      (comment "for determining resource/timing estimates of the design component")
+      (comment "represented by this netlist.")
+      (comment "Command line: -mdp2sp -w -secure FPGA_Code2.ngc FPGA_Code2.edif ")))
+  (external UNISIMS
+    (edifLevel 0)
+    (technology (numberDefinition))
+    (cell GND
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port G
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell VCC
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port P
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell FDE
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port C
+              (direction INPUT)
+            )
+            (port CE
+              (direction INPUT)
+            )
+            (port D
+              (direction INPUT)
+            )
+            (port Q
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell LUT2
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port I0
+              (direction INPUT)
+            )
+            (port I1
+              (direction INPUT)
+            )
+            (port O
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell LUT4
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port I0
+              (direction INPUT)
+            )
+            (port I1
+              (direction INPUT)
+            )
+            (port I2
+              (direction INPUT)
+            )
+            (port I3
+              (direction INPUT)
+            )
+            (port O
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell IBUF
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port I
+              (direction INPUT)
+            )
+            (port O
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell OBUFT
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port I
+              (direction INPUT)
+            )
+            (port T
+              (direction INPUT)
+            )
+            (port O
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell IOBUF
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port I
+              (direction INPUT)
+            )
+            (port T
+              (direction INPUT)
+            )
+            (port O
+              (direction OUTPUT)
+            )
+            (port IO
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell OBUF
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port I
+              (direction INPUT)
+            )
+            (port O
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell BUFGP
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port I
+              (direction INPUT)
+            )
+            (port O
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell INV
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port I
+              (direction INPUT)
+            )
+            (port O
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell MUXF5
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port I0
+              (direction INPUT)
+            )
+            (port I1
+              (direction INPUT)
+            )
+            (port S
+              (direction INPUT)
+            )
+            (port O
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+  )
+
+  (library FPGA_Code2_lib
+    (edifLevel 0)
+    (technology (numberDefinition))
+    (cell FPGA_Code2
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port ZIF10
+              (direction INOUT)
+            )
+            (port ZIF11
+              (direction INOUT)
+            )
+            (port ZIF12
+              (direction INOUT)
+            )
+            (port ZIF13
+              (direction INOUT)
+            )
+            (port ZIF14
+              (direction INOUT)
+            )
+            (port ZIF15
+              (direction INOUT)
+            )
+            (port ZIF20
+              (direction INOUT)
+            )
+            (port ZIF16
+              (direction INOUT)
+            )
+            (port ZIF21
+              (direction INOUT)
+            )
+            (port ZIF17
+              (direction INOUT)
+            )
+            (port ZIF22
+              (direction INOUT)
+            )
+            (port ZIF18
+              (direction INOUT)
+            )
+            (port ZIF23
+              (direction INOUT)
+            )
+            (port ZIF19
+              (direction INOUT)
+            )
+            (port ZIF24
+              (direction INOUT)
+            )
+            (port ZIF25
+              (direction INOUT)
+            )
+            (port ZIF30
+              (direction INOUT)
+            )
+            (port ZIF26
+              (direction INOUT)
+            )
+            (port ZIF31
+              (direction INOUT)
+            )
+            (port ZIF27
+              (direction INOUT)
+            )
+            (port ZIF32
+              (direction INOUT)
+            )
+            (port ZIF28
+              (direction INOUT)
+            )
+            (port ZIF33
+              (direction INOUT)
+            )
+            (port ZIF29
+              (direction INOUT)
+            )
+            (port ZIF34
+              (direction INOUT)
+            )
+            (port ZIF35
+              (direction INOUT)
+            )
+            (port ZIF36
+              (direction INOUT)
+            )
+            (port ZIF37
+              (direction INOUT)
+            )
+            (port ZIF38
+              (direction INOUT)
+            )
+            (port ZIF39
+              (direction INOUT)
+            )
+            (port ZIF0
+              (direction INOUT)
+            )
+            (port ZIF1
+              (direction INOUT)
+            )
+            (port ZIF2
+              (direction INOUT)
+            )
+            (port ZIF3
+              (direction INOUT)
+            )
+            (port ZIF4
+              (direction INOUT)
+            )
+            (port ZIF5
+              (direction INOUT)
+            )
+            (port ZIF6
+              (direction INOUT)
+            )
+            (port ZIF7
+              (direction INOUT)
+            )
+            (port ZIF8
+              (direction INOUT)
+            )
+            (port ZIF9
+              (direction INOUT)
+            )
+            (port MIC32
+              (direction INOUT)
+            )
+            (port MIC33
+              (direction INOUT)
+            )
+            (port MIC34
+              (direction INOUT)
+            )
+            (port MIC35
+              (direction INOUT)
+            )
+            (port MIC36
+              (direction INOUT)
+            )
+            (port MIC37
+              (direction INOUT)
+            )
+            (port MIC38
+              (direction INOUT)
+            )
+            (port MIC39
+              (direction INOUT)
+            )
+            (port CS
+              (direction INPUT)
+            )
+            (port MOSI
+              (direction INPUT)
+            )
+            (port WR
+              (direction INPUT)
+            )
+            (port MIC23
+              (direction OUTPUT)
+            )
+            (port MIC24
+              (direction INPUT)
+            )
+            (port SCK
+              (direction INPUT)
+            )
+            (port MIC25
+              (direction INPUT)
+            )
+            (port MIC30
+              (direction INPUT)
+            )
+            (port MIC26
+              (direction INPUT)
+            )
+            (port MIC31
+              (direction INPUT)
+            )
+            (port MIC27
+              (direction INPUT)
+            )
+            (port MIC28
+              (direction INPUT)
+            )
+            (port MIC29
+              (direction INPUT)
+            )
+            (designator "xc3s50an-4-tqg144")
+            (property TYPE (string "FPGA_Code2") (owner "Xilinx"))
+            (property NLW_UNIQUE_ID (integer 0) (owner "Xilinx"))
+            (property NLW_MACRO_TAG (integer 0) (owner "Xilinx"))
+            (property NLW_MACRO_ALIAS (string "FPGA_Code2_FPGA_Code2") (owner "Xilinx"))
+          )
+          (contents
+            (instance XST_GND
+              (viewRef view_1 (cellRef GND (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance XST_VCC
+              (viewRef view_1 (cellRef VCC (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance SPIData_0
+              (viewRef view_1 (cellRef FDE (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "0") (owner "Xilinx"))
+            )
+            (instance SPIData_1
+              (viewRef view_1 (cellRef FDE (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "0") (owner "Xilinx"))
+            )
+            (instance SPIData_2
+              (viewRef view_1 (cellRef FDE (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "0") (owner "Xilinx"))
+            )
+            (instance SPIData_3
+              (viewRef view_1 (cellRef FDE (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "0") (owner "Xilinx"))
+            )
+            (instance SPIData_4
+              (viewRef view_1 (cellRef FDE (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "0") (owner "Xilinx"))
+            )
+            (instance SPIData_5
+              (viewRef view_1 (cellRef FDE (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "0") (owner "Xilinx"))
+            )
+            (instance SPIData_6
+              (viewRef view_1 (cellRef FDE (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "0") (owner "Xilinx"))
+            )
+            (instance SPIData_7
+              (viewRef view_1 (cellRef FDE (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "0") (owner "Xilinx"))
+            )
+            (instance A201
+              (viewRef view_1 (cellRef LUT2 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "2") (owner "Xilinx"))
+            )
+            (instance A181
+              (viewRef view_1 (cellRef LUT2 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "2") (owner "Xilinx"))
+            )
+            (instance A171
+              (viewRef view_1 (cellRef LUT2 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "2") (owner "Xilinx"))
+            )
+            (instance A161
+              (viewRef view_1 (cellRef LUT2 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "2") (owner "Xilinx"))
+            )
+            (instance A151
+              (viewRef view_1 (cellRef LUT2 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "2") (owner "Xilinx"))
+            )
+            (instance A141
+              (viewRef view_1 (cellRef LUT2 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "2") (owner "Xilinx"))
+            )
+            (instance B81
+              (viewRef view_1 (cellRef LUT2 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "2") (owner "Xilinx"))
+            )
+            (instance B71
+              (viewRef view_1 (cellRef LUT2 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "2") (owner "Xilinx"))
+            )
+            (instance B61
+              (viewRef view_1 (cellRef LUT2 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "2") (owner "Xilinx"))
+            )
+            (instance A281
+              (viewRef view_1 (cellRef LUT2 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "2") (owner "Xilinx"))
+            )
+            (instance A271
+              (viewRef view_1 (cellRef LUT2 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "2") (owner "Xilinx"))
+            )
+            (instance A261
+              (viewRef view_1 (cellRef LUT2 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "2") (owner "Xilinx"))
+            )
+            (instance B41
+              (viewRef view_1 (cellRef LUT2 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "2") (owner "Xilinx"))
+            )
+            (instance B31
+              (viewRef view_1 (cellRef LUT2 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "2") (owner "Xilinx"))
+            )
+            (instance B21
+              (viewRef view_1 (cellRef LUT2 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "2") (owner "Xilinx"))
+            )
+            (instance B11
+              (viewRef view_1 (cellRef LUT2 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "2") (owner "Xilinx"))
+            )
+            (instance A251
+              (viewRef view_1 (cellRef LUT2 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "2") (owner "Xilinx"))
+            )
+            (instance A241
+              (viewRef view_1 (cellRef LUT2 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "2") (owner "Xilinx"))
+            )
+            (instance A231
+              (viewRef view_1 (cellRef LUT2 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "2") (owner "Xilinx"))
+            )
+            (instance A221
+              (viewRef view_1 (cellRef LUT2 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "2") (owner "Xilinx"))
+            )
+            (instance A211
+              (viewRef view_1 (cellRef LUT2 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "2") (owner "Xilinx"))
+            )
+            (instance (rename Direction14_1__inv1 "Direction14<1>_inv1")
+              (viewRef view_1 (cellRef LUT4 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "FFBF") (owner "Xilinx"))
+            )
+            (instance (rename CS_IBUF_renamed_0 "CS_IBUF")
+              (viewRef view_1 (cellRef IBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename MOSI_IBUF_renamed_1 "MOSI_IBUF")
+              (viewRef view_1 (cellRef IBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename WR_IBUF_renamed_2 "WR_IBUF")
+              (viewRef view_1 (cellRef IBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename MIC30_IBUF_renamed_3 "MIC30_IBUF")
+              (viewRef view_1 (cellRef IBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename MIC26_IBUF_renamed_4 "MIC26_IBUF")
+              (viewRef view_1 (cellRef IBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename MIC31_IBUF_renamed_5 "MIC31_IBUF")
+              (viewRef view_1 (cellRef IBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename MIC27_IBUF_renamed_6 "MIC27_IBUF")
+              (viewRef view_1 (cellRef IBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename MIC28_IBUF_renamed_7 "MIC28_IBUF")
+              (viewRef view_1 (cellRef IBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename MIC29_IBUF_renamed_8 "MIC29_IBUF")
+              (viewRef view_1 (cellRef IBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF10_OBUFT
+              (viewRef view_1 (cellRef OBUFT (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF11_OBUFT
+              (viewRef view_1 (cellRef OBUFT (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF12_IOBUF
+              (viewRef view_1 (cellRef IOBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF13_OBUFT
+              (viewRef view_1 (cellRef OBUFT (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF14_OBUFT
+              (viewRef view_1 (cellRef OBUFT (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF15_OBUFT
+              (viewRef view_1 (cellRef OBUFT (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF20_OBUFT
+              (viewRef view_1 (cellRef OBUFT (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF16_OBUFT
+              (viewRef view_1 (cellRef OBUFT (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF21_IOBUF
+              (viewRef view_1 (cellRef IOBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF17_OBUFT
+              (viewRef view_1 (cellRef OBUFT (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF22_IOBUF
+              (viewRef view_1 (cellRef IOBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF18_OBUFT
+              (viewRef view_1 (cellRef OBUFT (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF23_IOBUF
+              (viewRef view_1 (cellRef IOBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF19_OBUFT
+              (viewRef view_1 (cellRef OBUFT (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF24_IOBUF
+              (viewRef view_1 (cellRef IOBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF25_OBUFT
+              (viewRef view_1 (cellRef OBUFT (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF30_OBUFT
+              (viewRef view_1 (cellRef OBUFT (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF26_IOBUF
+              (viewRef view_1 (cellRef IOBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF31_OBUFT
+              (viewRef view_1 (cellRef OBUFT (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF27_IOBUF
+              (viewRef view_1 (cellRef IOBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF32_OBUFT
+              (viewRef view_1 (cellRef OBUFT (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF28_IOBUF
+              (viewRef view_1 (cellRef IOBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF33_OBUFT
+              (viewRef view_1 (cellRef OBUFT (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF29_OBUFT
+              (viewRef view_1 (cellRef OBUFT (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF34_OBUFT
+              (viewRef view_1 (cellRef OBUFT (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF35_OBUFT
+              (viewRef view_1 (cellRef OBUFT (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF36_OBUFT
+              (viewRef view_1 (cellRef OBUFT (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF37_OBUFT
+              (viewRef view_1 (cellRef OBUFT (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF38_OBUFT
+              (viewRef view_1 (cellRef OBUFT (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF39_OBUFT
+              (viewRef view_1 (cellRef OBUFT (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF0_OBUFT
+              (viewRef view_1 (cellRef OBUFT (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF1_OBUFT
+              (viewRef view_1 (cellRef OBUFT (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF2_OBUFT
+              (viewRef view_1 (cellRef OBUFT (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF3_OBUFT
+              (viewRef view_1 (cellRef OBUFT (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF4_OBUFT
+              (viewRef view_1 (cellRef OBUFT (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF5_OBUFT
+              (viewRef view_1 (cellRef OBUFT (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF6_OBUFT
+              (viewRef view_1 (cellRef OBUFT (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF7_OBUFT
+              (viewRef view_1 (cellRef OBUFT (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF8_OBUFT
+              (viewRef view_1 (cellRef OBUFT (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance ZIF9_OBUFT
+              (viewRef view_1 (cellRef OBUFT (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance MIC32_IOBUF
+              (viewRef view_1 (cellRef IOBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance MIC33_IOBUF
+              (viewRef view_1 (cellRef IOBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance MIC34_IOBUF
+              (viewRef view_1 (cellRef IOBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance MIC35_IOBUF
+              (viewRef view_1 (cellRef IOBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance MIC36_IOBUF
+              (viewRef view_1 (cellRef IOBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance MIC37_IOBUF
+              (viewRef view_1 (cellRef IOBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance MIC38_IOBUF
+              (viewRef view_1 (cellRef IOBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance MIC39_IOBUF
+              (viewRef view_1 (cellRef IOBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename MIC23_OBUF_renamed_9 "MIC23_OBUF")
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename SCK_BUFGP_renamed_10 "SCK_BUFGP")
+              (viewRef view_1 (cellRef BUFGP (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance CS_inv1_INV_0
+              (viewRef view_1 (cellRef INV (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance WR_inv1_INV_0
+              (viewRef view_1 (cellRef INV (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename ZIF21_and0000_inv1_renamed_11 "ZIF21_and0000_inv1")
+              (viewRef view_1 (cellRef LUT4 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "FFBF") (owner "Xilinx"))
+            )
+            (instance ZIF21_and0000_inv_f5
+              (viewRef view_1 (cellRef MUXF5 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename B01_renamed_12 "B01")
+              (viewRef view_1 (cellRef LUT4 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "0008") (owner "Xilinx"))
+            )
+            (instance B02
+              (viewRef view_1 (cellRef LUT4 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "0880") (owner "Xilinx"))
+            )
+            (instance B0_f5
+              (viewRef view_1 (cellRef MUXF5 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance (rename A14_and00001_renamed_13 "A14_and00001")
+              (viewRef view_1 (cellRef LUT4 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+              (property INIT (string "0001") (owner "Xilinx"))
+            )
+            (instance A14_and0000_f5
+              (viewRef view_1 (cellRef MUXF5 (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (net A0
+              (joined
+                (portRef G (instanceRef XST_GND))
+                (portRef I (instanceRef ZIF10_OBUFT))
+                (portRef I (instanceRef ZIF11_OBUFT))
+                (portRef I (instanceRef ZIF13_OBUFT))
+                (portRef I (instanceRef ZIF19_OBUFT))
+                (portRef I (instanceRef ZIF30_OBUFT))
+                (portRef I (instanceRef ZIF31_OBUFT))
+                (portRef I (instanceRef ZIF32_OBUFT))
+                (portRef I (instanceRef ZIF33_OBUFT))
+                (portRef I (instanceRef ZIF29_OBUFT))
+                (portRef I (instanceRef ZIF34_OBUFT))
+                (portRef I (instanceRef ZIF35_OBUFT))
+                (portRef I (instanceRef ZIF36_OBUFT))
+                (portRef I (instanceRef ZIF37_OBUFT))
+                (portRef I (instanceRef ZIF38_OBUFT))
+                (portRef I (instanceRef ZIF39_OBUFT))
+                (portRef I (instanceRef ZIF0_OBUFT))
+                (portRef I (instanceRef ZIF1_OBUFT))
+                (portRef I (instanceRef ZIF2_OBUFT))
+                (portRef I (instanceRef ZIF3_OBUFT))
+                (portRef I (instanceRef ZIF4_OBUFT))
+                (portRef I (instanceRef ZIF5_OBUFT))
+                (portRef I (instanceRef ZIF6_OBUFT))
+                (portRef I (instanceRef ZIF7_OBUFT))
+                (portRef I (instanceRef ZIF8_OBUFT))
+                (portRef I (instanceRef ZIF9_OBUFT))
+                (portRef I1 (instanceRef A14_and0000_f5))
+                (portRef I (instanceRef ZIF12_IOBUF))
+              )
+            )
+            (net A0_inv
+              (joined
+                (portRef P (instanceRef XST_VCC))
+                (portRef T (instanceRef ZIF10_OBUFT))
+                (portRef T (instanceRef ZIF11_OBUFT))
+                (portRef T (instanceRef ZIF13_OBUFT))
+                (portRef T (instanceRef ZIF19_OBUFT))
+                (portRef T (instanceRef ZIF30_OBUFT))
+                (portRef T (instanceRef ZIF31_OBUFT))
+                (portRef T (instanceRef ZIF32_OBUFT))
+                (portRef T (instanceRef ZIF33_OBUFT))
+                (portRef T (instanceRef ZIF29_OBUFT))
+                (portRef T (instanceRef ZIF34_OBUFT))
+                (portRef T (instanceRef ZIF35_OBUFT))
+                (portRef T (instanceRef ZIF36_OBUFT))
+                (portRef T (instanceRef ZIF37_OBUFT))
+                (portRef T (instanceRef ZIF38_OBUFT))
+                (portRef T (instanceRef ZIF39_OBUFT))
+                (portRef T (instanceRef ZIF0_OBUFT))
+                (portRef T (instanceRef ZIF1_OBUFT))
+                (portRef T (instanceRef ZIF2_OBUFT))
+                (portRef T (instanceRef ZIF3_OBUFT))
+                (portRef T (instanceRef ZIF4_OBUFT))
+                (portRef T (instanceRef ZIF5_OBUFT))
+                (portRef T (instanceRef ZIF6_OBUFT))
+                (portRef T (instanceRef ZIF7_OBUFT))
+                (portRef T (instanceRef ZIF8_OBUFT))
+                (portRef T (instanceRef ZIF9_OBUFT))
+                (portRef I1 (instanceRef ZIF21_and0000_inv_f5))
+                (portRef T (instanceRef ZIF12_IOBUF))
+              )
+            )
+            (net A14
+              (joined
+                (portRef O (instanceRef A141))
+                (portRef I (instanceRef ZIF14_OBUFT))
+              )
+            )
+            (net A14_and0000
+              (joined
+                (portRef I2 (instanceRef Direction14_1__inv1))
+                (portRef I2 (instanceRef ZIF21_and0000_inv1_renamed_11))
+                (portRef I0 (instanceRef B01_renamed_12))
+                (portRef I0 (instanceRef B02))
+                (portRef O (instanceRef A14_and0000_f5))
+              )
+            )
+            (net A14_and00001
+              (joined
+                (portRef O (instanceRef A14_and00001_renamed_13))
+                (portRef I0 (instanceRef A14_and0000_f5))
+              )
+            )
+            (net A15
+              (joined
+                (portRef O (instanceRef A151))
+                (portRef I (instanceRef ZIF15_OBUFT))
+              )
+            )
+            (net A16
+              (joined
+                (portRef O (instanceRef A161))
+                (portRef I (instanceRef ZIF16_OBUFT))
+              )
+            )
+            (net A17
+              (joined
+                (portRef O (instanceRef A171))
+                (portRef I (instanceRef ZIF17_OBUFT))
+              )
+            )
+            (net A18
+              (joined
+                (portRef O (instanceRef A181))
+                (portRef I (instanceRef ZIF18_OBUFT))
+              )
+            )
+            (net A20
+              (joined
+                (portRef O (instanceRef A201))
+                (portRef I (instanceRef ZIF20_OBUFT))
+              )
+            )
+            (net A21
+              (joined
+                (portRef O (instanceRef A211))
+                (portRef I (instanceRef ZIF21_IOBUF))
+              )
+            )
+            (net A22
+              (joined
+                (portRef O (instanceRef A221))
+                (portRef I (instanceRef ZIF22_IOBUF))
+              )
+            )
+            (net A23
+              (joined
+                (portRef O (instanceRef A231))
+                (portRef I (instanceRef ZIF23_IOBUF))
+              )
+            )
+            (net A24
+              (joined
+                (portRef O (instanceRef A241))
+                (portRef I (instanceRef ZIF24_IOBUF))
+              )
+            )
+            (net A25
+              (joined
+                (portRef O (instanceRef A251))
+                (portRef I (instanceRef ZIF25_OBUFT))
+              )
+            )
+            (net A26
+              (joined
+                (portRef O (instanceRef A261))
+                (portRef I (instanceRef ZIF26_IOBUF))
+              )
+            )
+            (net A27
+              (joined
+                (portRef O (instanceRef A271))
+                (portRef I (instanceRef ZIF27_IOBUF))
+              )
+            )
+            (net A28
+              (joined
+                (portRef O (instanceRef A281))
+                (portRef I (instanceRef ZIF28_IOBUF))
+              )
+            )
+            (net B0
+              (joined
+                (portRef O (instanceRef B01_renamed_12))
+                (portRef I1 (instanceRef B0_f5))
+              )
+            )
+            (net B01
+              (joined
+                (portRef O (instanceRef B02))
+                (portRef I0 (instanceRef B0_f5))
+              )
+            )
+            (net B1
+              (joined
+                (portRef O (instanceRef B11))
+                (portRef I (instanceRef MIC39_IOBUF))
+              )
+            )
+            (net B2
+              (joined
+                (portRef O (instanceRef B21))
+                (portRef I (instanceRef MIC38_IOBUF))
+              )
+            )
+            (net B3
+              (joined
+                (portRef O (instanceRef B31))
+                (portRef I (instanceRef MIC37_IOBUF))
+              )
+            )
+            (net B4
+              (joined
+                (portRef O (instanceRef B41))
+                (portRef I (instanceRef MIC35_IOBUF))
+                (portRef I (instanceRef MIC36_IOBUF))
+              )
+            )
+            (net B6
+              (joined
+                (portRef O (instanceRef B61))
+                (portRef I (instanceRef MIC34_IOBUF))
+              )
+            )
+            (net B7
+              (joined
+                (portRef O (instanceRef B71))
+                (portRef I (instanceRef MIC33_IOBUF))
+              )
+            )
+            (net B8
+              (joined
+                (portRef O (instanceRef B81))
+                (portRef I (instanceRef MIC32_IOBUF))
+              )
+            )
+            (net CS
+              (joined
+                (portRef CS)
+                (portRef I (instanceRef CS_IBUF_renamed_0))
+              )
+            )
+            (net CS_IBUF
+              (joined
+                (portRef O (instanceRef CS_IBUF_renamed_0))
+                (portRef I (instanceRef CS_inv1_INV_0))
+              )
+            )
+            (net CS_inv
+              (joined
+                (portRef CE (instanceRef SPIData_0))
+                (portRef CE (instanceRef SPIData_1))
+                (portRef CE (instanceRef SPIData_2))
+                (portRef CE (instanceRef SPIData_3))
+                (portRef CE (instanceRef SPIData_4))
+                (portRef CE (instanceRef SPIData_5))
+                (portRef CE (instanceRef SPIData_6))
+                (portRef CE (instanceRef SPIData_7))
+                (portRef O (instanceRef CS_inv1_INV_0))
+              )
+            )
+            (net (rename Direction14_1__inv "Direction14<1>_inv")
+              (joined
+                (portRef I1 (instanceRef A201))
+                (portRef I1 (instanceRef A181))
+                (portRef I1 (instanceRef A171))
+                (portRef I1 (instanceRef A161))
+                (portRef I1 (instanceRef A151))
+                (portRef I1 (instanceRef A141))
+                (portRef I1 (instanceRef B81))
+                (portRef I1 (instanceRef B71))
+                (portRef I1 (instanceRef B61))
+                (portRef I1 (instanceRef A281))
+                (portRef I1 (instanceRef A271))
+                (portRef I1 (instanceRef A261))
+                (portRef I1 (instanceRef B41))
+                (portRef I1 (instanceRef B31))
+                (portRef I1 (instanceRef B21))
+                (portRef I1 (instanceRef B11))
+                (portRef I1 (instanceRef A251))
+                (portRef I1 (instanceRef A241))
+                (portRef I1 (instanceRef A231))
+                (portRef I1 (instanceRef A221))
+                (portRef I1 (instanceRef A211))
+                (portRef O (instanceRef Direction14_1__inv1))
+                (portRef T (instanceRef ZIF14_OBUFT))
+                (portRef T (instanceRef ZIF15_OBUFT))
+                (portRef T (instanceRef ZIF20_OBUFT))
+                (portRef T (instanceRef ZIF16_OBUFT))
+                (portRef T (instanceRef ZIF17_OBUFT))
+                (portRef T (instanceRef ZIF18_OBUFT))
+              )
+            )
+            (net MIC23
+              (joined
+                (portRef MIC23)
+                (portRef O (instanceRef MIC23_OBUF_renamed_9))
+              )
+            )
+            (net MIC23_OBUF
+              (joined
+                (portRef I (instanceRef MIC23_OBUF_renamed_9))
+                (portRef O (instanceRef B0_f5))
+              )
+            )
+            (net MIC26
+              (joined
+                (portRef MIC26)
+                (portRef I (instanceRef MIC26_IBUF_renamed_4))
+              )
+            )
+            (net MIC26_IBUF
+              (joined
+                (portRef I0 (instanceRef A201))
+                (portRef O (instanceRef MIC26_IBUF_renamed_4))
+              )
+            )
+            (net MIC27
+              (joined
+                (portRef MIC27)
+                (portRef I (instanceRef MIC27_IBUF_renamed_6))
+              )
+            )
+            (net MIC27_IBUF
+              (joined
+                (portRef I0 (instanceRef A181))
+                (portRef O (instanceRef MIC27_IBUF_renamed_6))
+              )
+            )
+            (net MIC28
+              (joined
+                (portRef MIC28)
+                (portRef I (instanceRef MIC28_IBUF_renamed_7))
+              )
+            )
+            (net MIC28_IBUF
+              (joined
+                (portRef I0 (instanceRef A171))
+                (portRef O (instanceRef MIC28_IBUF_renamed_7))
+              )
+            )
+            (net MIC29
+              (joined
+                (portRef MIC29)
+                (portRef I (instanceRef MIC29_IBUF_renamed_8))
+              )
+            )
+            (net MIC29_IBUF
+              (joined
+                (portRef I0 (instanceRef A161))
+                (portRef O (instanceRef MIC29_IBUF_renamed_8))
+              )
+            )
+            (net MIC30
+              (joined
+                (portRef MIC30)
+                (portRef I (instanceRef MIC30_IBUF_renamed_3))
+              )
+            )
+            (net MIC30_IBUF
+              (joined
+                (portRef I0 (instanceRef A151))
+                (portRef O (instanceRef MIC30_IBUF_renamed_3))
+              )
+            )
+            (net MIC31
+              (joined
+                (portRef MIC31)
+                (portRef I (instanceRef MIC31_IBUF_renamed_5))
+              )
+            )
+            (net MIC31_IBUF
+              (joined
+                (portRef I0 (instanceRef A141))
+                (portRef O (instanceRef MIC31_IBUF_renamed_5))
+              )
+            )
+            (net MIC32
+              (joined
+                (portRef MIC32)
+                (portRef IO (instanceRef MIC32_IOBUF))
+              )
+            )
+            (net MIC33
+              (joined
+                (portRef MIC33)
+                (portRef IO (instanceRef MIC33_IOBUF))
+              )
+            )
+            (net MIC34
+              (joined
+                (portRef MIC34)
+                (portRef IO (instanceRef MIC34_IOBUF))
+              )
+            )
+            (net MIC35
+              (joined
+                (portRef MIC35)
+                (portRef IO (instanceRef MIC35_IOBUF))
+              )
+            )
+            (net MIC36
+              (joined
+                (portRef MIC36)
+                (portRef IO (instanceRef MIC36_IOBUF))
+              )
+            )
+            (net MIC37
+              (joined
+                (portRef MIC37)
+                (portRef IO (instanceRef MIC37_IOBUF))
+              )
+            )
+            (net MIC38
+              (joined
+                (portRef MIC38)
+                (portRef IO (instanceRef MIC38_IOBUF))
+              )
+            )
+            (net MIC39
+              (joined
+                (portRef MIC39)
+                (portRef IO (instanceRef MIC39_IOBUF))
+              )
+            )
+            (net MOSI
+              (joined
+                (portRef MOSI)
+                (portRef I (instanceRef MOSI_IBUF_renamed_1))
+              )
+            )
+            (net MOSI_IBUF
+              (joined
+                (portRef D (instanceRef SPIData_0))
+                (portRef O (instanceRef MOSI_IBUF_renamed_1))
+              )
+            )
+            (net N10
+              (joined
+                (portRef I0 (instanceRef B11))
+                (portRef O (instanceRef ZIF21_IOBUF))
+              )
+            )
+            (net N11
+              (joined
+                (portRef I0 (instanceRef B21))
+                (portRef O (instanceRef ZIF22_IOBUF))
+              )
+            )
+            (net N12
+              (joined
+                (portRef I0 (instanceRef B31))
+                (portRef O (instanceRef ZIF23_IOBUF))
+              )
+            )
+            (net N13
+              (joined
+                (portRef I0 (instanceRef B41))
+                (portRef O (instanceRef ZIF24_IOBUF))
+              )
+            )
+            (net N14
+              (joined
+                (portRef I0 (instanceRef B61))
+                (portRef O (instanceRef ZIF26_IOBUF))
+              )
+            )
+            (net N15
+              (joined
+                (portRef I0 (instanceRef B71))
+                (portRef O (instanceRef ZIF27_IOBUF))
+              )
+            )
+            (net N16
+              (joined
+                (portRef I0 (instanceRef B81))
+                (portRef O (instanceRef ZIF28_IOBUF))
+              )
+            )
+            (net N17
+              (joined
+                (portRef I0 (instanceRef A281))
+                (portRef O (instanceRef MIC32_IOBUF))
+              )
+            )
+            (net N18
+              (joined
+                (portRef I0 (instanceRef A271))
+                (portRef O (instanceRef MIC33_IOBUF))
+              )
+            )
+            (net N19
+              (joined
+                (portRef I0 (instanceRef A261))
+                (portRef O (instanceRef MIC34_IOBUF))
+              )
+            )
+            (net N20
+              (joined
+                (portRef I0 (instanceRef A251))
+                (portRef O (instanceRef MIC35_IOBUF))
+              )
+            )
+            (net N21
+              (joined
+                (portRef I0 (instanceRef A241))
+                (portRef O (instanceRef MIC36_IOBUF))
+              )
+            )
+            (net N22
+              (joined
+                (portRef I0 (instanceRef A231))
+                (portRef O (instanceRef MIC37_IOBUF))
+              )
+            )
+            (net N23
+              (joined
+                (portRef I0 (instanceRef A221))
+                (portRef O (instanceRef MIC38_IOBUF))
+              )
+            )
+            (net N24
+              (joined
+                (portRef I0 (instanceRef A211))
+                (portRef O (instanceRef MIC39_IOBUF))
+              )
+            )
+            (net N9
+              (joined
+                (portRef I1 (instanceRef B01_renamed_12))
+                (portRef I1 (instanceRef B02))
+                (portRef O (instanceRef ZIF12_IOBUF))
+              )
+            )
+            (net SCK
+              (joined
+                (portRef SCK)
+                (portRef I (instanceRef SCK_BUFGP_renamed_10))
+              )
+            )
+            (net SCK_BUFGP
+              (joined
+                (portRef C (instanceRef SPIData_0))
+                (portRef C (instanceRef SPIData_1))
+                (portRef C (instanceRef SPIData_2))
+                (portRef C (instanceRef SPIData_3))
+                (portRef C (instanceRef SPIData_4))
+                (portRef C (instanceRef SPIData_5))
+                (portRef C (instanceRef SPIData_6))
+                (portRef C (instanceRef SPIData_7))
+                (portRef O (instanceRef SCK_BUFGP_renamed_10))
+              )
+            )
+            (net (rename SPIData_0__ "SPIData<0>")
+              (joined
+                (portRef Q (instanceRef SPIData_0))
+                (portRef D (instanceRef SPIData_1))
+                (portRef I1 (instanceRef Direction14_1__inv1))
+                (portRef I1 (instanceRef ZIF21_and0000_inv1_renamed_11))
+                (portRef I3 (instanceRef B01_renamed_12))
+                (portRef I2 (instanceRef B02))
+              )
+            )
+            (net (rename SPIData_1__ "SPIData<1>")
+              (joined
+                (portRef Q (instanceRef SPIData_1))
+                (portRef D (instanceRef SPIData_2))
+                (portRef I3 (instanceRef Direction14_1__inv1))
+                (portRef I0 (instanceRef ZIF21_and0000_inv1_renamed_11))
+                (portRef I2 (instanceRef B01_renamed_12))
+                (portRef I3 (instanceRef B02))
+              )
+            )
+            (net (rename SPIData_2__ "SPIData<2>")
+              (joined
+                (portRef Q (instanceRef SPIData_2))
+                (portRef D (instanceRef SPIData_3))
+                (portRef I0 (instanceRef Direction14_1__inv1))
+                (portRef I3 (instanceRef ZIF21_and0000_inv1_renamed_11))
+                (portRef S (instanceRef B0_f5))
+              )
+            )
+            (net (rename SPIData_3__ "SPIData<3>")
+              (joined
+                (portRef Q (instanceRef SPIData_3))
+                (portRef D (instanceRef SPIData_4))
+                (portRef I1 (instanceRef A14_and00001_renamed_13))
+              )
+            )
+            (net (rename SPIData_4__ "SPIData<4>")
+              (joined
+                (portRef Q (instanceRef SPIData_4))
+                (portRef D (instanceRef SPIData_5))
+                (portRef I3 (instanceRef A14_and00001_renamed_13))
+              )
+            )
+            (net (rename SPIData_5__ "SPIData<5>")
+              (joined
+                (portRef Q (instanceRef SPIData_5))
+                (portRef D (instanceRef SPIData_6))
+                (portRef I2 (instanceRef A14_and00001_renamed_13))
+              )
+            )
+            (net (rename SPIData_6__ "SPIData<6>")
+              (joined
+                (portRef Q (instanceRef SPIData_6))
+                (portRef D (instanceRef SPIData_7))
+                (portRef I0 (instanceRef A14_and00001_renamed_13))
+              )
+            )
+            (net (rename SPIData_7__ "SPIData<7>")
+              (joined
+                (portRef Q (instanceRef SPIData_7))
+                (portRef S (instanceRef A14_and0000_f5))
+              )
+            )
+            (net WR
+              (joined
+                (portRef WR)
+                (portRef I (instanceRef WR_IBUF_renamed_2))
+              )
+            )
+            (net WR_IBUF
+              (joined
+                (portRef O (instanceRef WR_IBUF_renamed_2))
+                (portRef I (instanceRef WR_inv1_INV_0))
+                (portRef S (instanceRef ZIF21_and0000_inv_f5))
+              )
+            )
+            (net WR_inv
+              (joined
+                (portRef O (instanceRef WR_inv1_INV_0))
+                (portRef T (instanceRef MIC32_IOBUF))
+                (portRef T (instanceRef MIC33_IOBUF))
+                (portRef T (instanceRef MIC34_IOBUF))
+                (portRef T (instanceRef MIC35_IOBUF))
+                (portRef T (instanceRef MIC36_IOBUF))
+                (portRef T (instanceRef MIC37_IOBUF))
+                (portRef T (instanceRef MIC38_IOBUF))
+                (portRef T (instanceRef MIC39_IOBUF))
+              )
+            )
+            (net ZIF0
+              (joined
+                (portRef ZIF0)
+                (portRef O (instanceRef ZIF0_OBUFT))
+              )
+            )
+            (net ZIF1
+              (joined
+                (portRef ZIF1)
+                (portRef O (instanceRef ZIF1_OBUFT))
+              )
+            )
+            (net ZIF10
+              (joined
+                (portRef ZIF10)
+                (portRef O (instanceRef ZIF10_OBUFT))
+              )
+            )
+            (net ZIF11
+              (joined
+                (portRef ZIF11)
+                (portRef O (instanceRef ZIF11_OBUFT))
+              )
+            )
+            (net ZIF12
+              (joined
+                (portRef ZIF12)
+                (portRef IO (instanceRef ZIF12_IOBUF))
+              )
+            )
+            (net ZIF13
+              (joined
+                (portRef ZIF13)
+                (portRef O (instanceRef ZIF13_OBUFT))
+              )
+            )
+            (net ZIF14
+              (joined
+                (portRef ZIF14)
+                (portRef O (instanceRef ZIF14_OBUFT))
+              )
+            )
+            (net ZIF15
+              (joined
+                (portRef ZIF15)
+                (portRef O (instanceRef ZIF15_OBUFT))
+              )
+            )
+            (net ZIF16
+              (joined
+                (portRef ZIF16)
+                (portRef O (instanceRef ZIF16_OBUFT))
+              )
+            )
+            (net ZIF17
+              (joined
+                (portRef ZIF17)
+                (portRef O (instanceRef ZIF17_OBUFT))
+              )
+            )
+            (net ZIF18
+              (joined
+                (portRef ZIF18)
+                (portRef O (instanceRef ZIF18_OBUFT))
+              )
+            )
+            (net ZIF19
+              (joined
+                (portRef ZIF19)
+                (portRef O (instanceRef ZIF19_OBUFT))
+              )
+            )
+            (net ZIF2
+              (joined
+                (portRef ZIF2)
+                (portRef O (instanceRef ZIF2_OBUFT))
+              )
+            )
+            (net ZIF20
+              (joined
+                (portRef ZIF20)
+                (portRef O (instanceRef ZIF20_OBUFT))
+              )
+            )
+            (net ZIF21
+              (joined
+                (portRef ZIF21)
+                (portRef IO (instanceRef ZIF21_IOBUF))
+              )
+            )
+            (net ZIF21_and0000_inv
+              (joined
+                (portRef T (instanceRef ZIF25_OBUFT))
+                (portRef O (instanceRef ZIF21_and0000_inv_f5))
+                (portRef T (instanceRef ZIF21_IOBUF))
+                (portRef T (instanceRef ZIF22_IOBUF))
+                (portRef T (instanceRef ZIF23_IOBUF))
+                (portRef T (instanceRef ZIF24_IOBUF))
+                (portRef T (instanceRef ZIF26_IOBUF))
+                (portRef T (instanceRef ZIF27_IOBUF))
+                (portRef T (instanceRef ZIF28_IOBUF))
+              )
+            )
+            (net ZIF21_and0000_inv1
+              (joined
+                (portRef O (instanceRef ZIF21_and0000_inv1_renamed_11))
+                (portRef I0 (instanceRef ZIF21_and0000_inv_f5))
+              )
+            )
+            (net ZIF22
+              (joined
+                (portRef ZIF22)
+                (portRef IO (instanceRef ZIF22_IOBUF))
+              )
+            )
+            (net ZIF23
+              (joined
+                (portRef ZIF23)
+                (portRef IO (instanceRef ZIF23_IOBUF))
+              )
+            )
+            (net ZIF24
+              (joined
+                (portRef ZIF24)
+                (portRef IO (instanceRef ZIF24_IOBUF))
+              )
+            )
+            (net ZIF25
+              (joined
+                (portRef ZIF25)
+                (portRef O (instanceRef ZIF25_OBUFT))
+              )
+            )
+            (net ZIF26
+              (joined
+                (portRef ZIF26)
+                (portRef IO (instanceRef ZIF26_IOBUF))
+              )
+            )
+            (net ZIF27
+              (joined
+                (portRef ZIF27)
+                (portRef IO (instanceRef ZIF27_IOBUF))
+              )
+            )
+            (net ZIF28
+              (joined
+                (portRef ZIF28)
+                (portRef IO (instanceRef ZIF28_IOBUF))
+              )
+            )
+            (net ZIF29
+              (joined
+                (portRef ZIF29)
+                (portRef O (instanceRef ZIF29_OBUFT))
+              )
+            )
+            (net ZIF3
+              (joined
+                (portRef ZIF3)
+                (portRef O (instanceRef ZIF3_OBUFT))
+              )
+            )
+            (net ZIF30
+              (joined
+                (portRef ZIF30)
+                (portRef O (instanceRef ZIF30_OBUFT))
+              )
+            )
+            (net ZIF31
+              (joined
+                (portRef ZIF31)
+                (portRef O (instanceRef ZIF31_OBUFT))
+              )
+            )
+            (net ZIF32
+              (joined
+                (portRef ZIF32)
+                (portRef O (instanceRef ZIF32_OBUFT))
+              )
+            )
+            (net ZIF33
+              (joined
+                (portRef ZIF33)
+                (portRef O (instanceRef ZIF33_OBUFT))
+              )
+            )
+            (net ZIF34
+              (joined
+                (portRef ZIF34)
+                (portRef O (instanceRef ZIF34_OBUFT))
+              )
+            )
+            (net ZIF35
+              (joined
+                (portRef ZIF35)
+                (portRef O (instanceRef ZIF35_OBUFT))
+              )
+            )
+            (net ZIF36
+              (joined
+                (portRef ZIF36)
+                (portRef O (instanceRef ZIF36_OBUFT))
+              )
+            )
+            (net ZIF37
+              (joined
+                (portRef ZIF37)
+                (portRef O (instanceRef ZIF37_OBUFT))
+              )
+            )
+            (net ZIF38
+              (joined
+                (portRef ZIF38)
+                (portRef O (instanceRef ZIF38_OBUFT))
+              )
+            )
+            (net ZIF39
+              (joined
+                (portRef ZIF39)
+                (portRef O (instanceRef ZIF39_OBUFT))
+              )
+            )
+            (net ZIF4
+              (joined
+                (portRef ZIF4)
+                (portRef O (instanceRef ZIF4_OBUFT))
+              )
+            )
+            (net ZIF5
+              (joined
+                (portRef ZIF5)
+                (portRef O (instanceRef ZIF5_OBUFT))
+              )
+            )
+            (net ZIF6
+              (joined
+                (portRef ZIF6)
+                (portRef O (instanceRef ZIF6_OBUFT))
+              )
+            )
+            (net ZIF7
+              (joined
+                (portRef ZIF7)
+                (portRef O (instanceRef ZIF7_OBUFT))
+              )
+            )
+            (net ZIF8
+              (joined
+                (portRef ZIF8)
+                (portRef O (instanceRef ZIF8_OBUFT))
+              )
+            )
+            (net ZIF9
+              (joined
+                (portRef ZIF9)
+                (portRef O (instanceRef ZIF9_OBUFT))
+              )
+            )
+          )
+      )
+    )
+  )
+
+  (design FPGA_Code2
+    (cellRef FPGA_Code2
+      (libraryRef FPGA_Code2_lib)
+    )
+    (property PART (string "xc3s50an-4-tqg144") (owner "Xilinx"))
+  )
+)
+

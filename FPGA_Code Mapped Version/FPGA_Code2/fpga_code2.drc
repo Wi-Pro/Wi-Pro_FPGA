@@ -1,0 +1,8 @@
+Release 14.6 Drc P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Tue Apr 07 07:16:29 2015
+
+drc -z FPGA_Code2.ncd FPGA_Code2.pcf
+
+DRC detected 0 errors and 0 warnings.

@@ -1,0 +1,477 @@
+Release 14.6 - xst P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.54 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.54 secs
+ 
+--> Reading design: FPGA_Code2.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "FPGA_Code2.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "FPGA_Code2"
+Output Format                      : NGC
+Target Device                      : xc3s50an-4-tqg144
+
+---- Source Options
+Top Module Name                    : FPGA_Code2
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "FPGA_Code2.v" in library work
+Module <FPGA_Code2> compiled
+No errors in compilation
+Analysis of file <"FPGA_Code2.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <FPGA_Code2> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <FPGA_Code2>.
+WARNING:Xst:905 - "FPGA_Code2.v" line 176: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <SPIData>
+Module <FPGA_Code2> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <FPGA_Code2>.
+    Related source file is "FPGA_Code2.v".
+    Using one-hot encoding for signal <Direction0>.
+    Using one-hot encoding for signal <Direction1>.
+    Using one-hot encoding for signal <Direction2>.
+    Using one-hot encoding for signal <Direction3>.
+    Using one-hot encoding for signal <Direction4>.
+    Using one-hot encoding for signal <Direction5>.
+    Using one-hot encoding for signal <Direction6>.
+    Using one-hot encoding for signal <Direction7>.
+    Using one-hot encoding for signal <Direction9>.
+    Using one-hot encoding for signal <Direction10>.
+    Using one-hot encoding for signal <Direction11>.
+    Using one-hot encoding for signal <Direction12>.
+    Using one-hot encoding for signal <Direction13>.
+    Using one-hot encoding for signal <Direction14>.
+    Using one-hot encoding for signal <Direction15>.
+    Using one-hot encoding for signal <Direction16>.
+    Using one-hot encoding for signal <Direction17>.
+    Using one-hot encoding for signal <Direction18>.
+    Using one-hot encoding for signal <Direction19>.
+    Using one-hot encoding for signal <Direction20>.
+    Using one-hot encoding for signal <Direction21>.
+    Using one-hot encoding for signal <Direction22>.
+    Using one-hot encoding for signal <Direction23>.
+    Using one-hot encoding for signal <Direction24>.
+    Using one-hot encoding for signal <Direction25>.
+    Using one-hot encoding for signal <Direction26>.
+    Using one-hot encoding for signal <Direction27>.
+    Using one-hot encoding for signal <Direction28>.
+    Using one-hot encoding for signal <Direction29>.
+    Using one-hot encoding for signal <Direction30>.
+    Using one-hot encoding for signal <Direction39>.
+    Found 1-bit tristate buffer for signal <MIC32>.
+    Found 1-bit tristate buffer for signal <MIC33>.
+    Found 1-bit tristate buffer for signal <MIC34>.
+    Found 1-bit tristate buffer for signal <MIC35>.
+    Found 1-bit tristate buffer for signal <MIC36>.
+    Found 1-bit tristate buffer for signal <MIC37>.
+    Found 1-bit tristate buffer for signal <MIC38>.
+    Found 1-bit tristate buffer for signal <MIC39>.
+    Found 1-bit tristate buffer for signal <ZIF0>.
+    Found 1-bit tristate buffer for signal <ZIF1>.
+    Found 1-bit tristate buffer for signal <ZIF10>.
+    Found 1-bit tristate buffer for signal <ZIF11>.
+    Found 1-bit tristate buffer for signal <ZIF12>.
+    Found 1-bit tristate buffer for signal <ZIF13>.
+    Found 1-bit tristate buffer for signal <ZIF14>.
+    Found 1-bit tristate buffer for signal <ZIF15>.
+    Found 1-bit tristate buffer for signal <ZIF16>.
+    Found 1-bit tristate buffer for signal <ZIF17>.
+    Found 1-bit tristate buffer for signal <ZIF18>.
+    Found 1-bit tristate buffer for signal <ZIF19>.
+    Found 1-bit tristate buffer for signal <ZIF2>.
+    Found 1-bit tristate buffer for signal <ZIF20>.
+    Found 1-bit tristate buffer for signal <ZIF21>.
+    Found 1-bit tristate buffer for signal <ZIF22>.
+    Found 1-bit tristate buffer for signal <ZIF23>.
+    Found 1-bit tristate buffer for signal <ZIF24>.
+    Found 1-bit tristate buffer for signal <ZIF25>.
+    Found 1-bit tristate buffer for signal <ZIF26>.
+    Found 1-bit tristate buffer for signal <ZIF27>.
+    Found 1-bit tristate buffer for signal <ZIF28>.
+    Found 1-bit tristate buffer for signal <ZIF29>.
+    Found 1-bit tristate buffer for signal <ZIF3>.
+    Found 1-bit tristate buffer for signal <ZIF30>.
+    Found 1-bit tristate buffer for signal <ZIF31>.
+    Found 1-bit tristate buffer for signal <ZIF32>.
+    Found 1-bit tristate buffer for signal <ZIF33>.
+    Found 1-bit tristate buffer for signal <ZIF34>.
+    Found 1-bit tristate buffer for signal <ZIF35>.
+    Found 1-bit tristate buffer for signal <ZIF36>.
+    Found 1-bit tristate buffer for signal <ZIF37>.
+    Found 1-bit tristate buffer for signal <ZIF38>.
+    Found 1-bit tristate buffer for signal <ZIF39>.
+    Found 1-bit tristate buffer for signal <ZIF4>.
+    Found 1-bit tristate buffer for signal <ZIF5>.
+    Found 1-bit tristate buffer for signal <ZIF6>.
+    Found 1-bit tristate buffer for signal <ZIF7>.
+    Found 1-bit tristate buffer for signal <ZIF8>.
+    Found 1-bit tristate buffer for signal <ZIF9>.
+    Found 8-bit register for signal <SPIData>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred  48 Tristate(s).
+Unit <FPGA_Code2> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 1
+ 8-bit register                                        : 1
+# Tristates                                            : 48
+ 1-bit tristate buffer                                 : 48
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 8
+ Flip-Flops                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <FPGA_Code2> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block FPGA_Code2, actual ratio is 7.
+FlipFlop SPIData_1 has been replicated 1 time(s)
+FlipFlop SPIData_2 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <FPGA_Code2> :
+	Found 2-bit shift register for signal <SPIData_3>.
+Unit <FPGA_Code2> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 8
+ Flip-Flops                                            : 8
+# Shift Registers                                      : 1
+ 2-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : FPGA_Code2.ngr
+Top Level Output File Name         : FPGA_Code2
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 61
+
+Cell Usage :
+# BELS                             : 100
+#      GND                         : 1
+#      INV                         : 2
+#      LUT2                        : 22
+#      LUT3                        : 15
+#      LUT4                        : 55
+#      MUXF5                       : 4
+#      VCC                         : 1
+# FlipFlops/Latches                : 9
+#      FDE                         : 9
+# Shift Registers                  : 1
+#      SRL16E                      : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 60
+#      IBUF                        : 11
+#      IOBUF                       : 31
+#      OBUF                        : 1
+#      OBUFT                       : 17
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50antqg144-4 
+
+ Number of Slices:                       53  out of    704     7%  
+ Number of Slice Flip Flops:              9  out of   1408     0%  
+ Number of 4 input LUTs:                 95  out of   1408     6%  
+    Number used as logic:                94
+    Number used as Shift registers:       1
+ Number of IOs:                          61
+ Number of bonded IOBs:                  61  out of    108    56%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+SCK                                | BUFGP                  | 10    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 3.781ns (Maximum Frequency: 264.480MHz)
+   Minimum input arrival time before clock: 3.387ns
+   Maximum output required time after clock: 13.070ns
+   Maximum combinational path delay: 8.613ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SCK'
+  Clock period: 3.781ns (frequency: 264.480MHz)
+  Total number of paths / destination ports: 9 / 9
+-------------------------------------------------------------------------
+Delay:               3.781ns (Levels of Logic = 0)
+  Source:            Mshreg_SPIData_3 (FF)
+  Destination:       SPIData_3 (FF)
+  Source Clock:      SCK rising
+  Destination Clock: SCK rising
+
+  Data Path: Mshreg_SPIData_3 to SPIData_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SRL16E:CLK->Q         1   3.529   0.000  Mshreg_SPIData_3 (Mshreg_SPIData_3)
+     FDE:D                     0.252          SPIData_3
+    ----------------------------------------
+    Total                      3.781ns (3.781ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'SCK'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              3.387ns (Levels of Logic = 2)
+  Source:            CS (PAD)
+  Destination:       Mshreg_SPIData_3 (FF)
+  Destination Clock: SCK rising
+
+  Data Path: CS to Mshreg_SPIData_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.849   0.420  CS_IBUF (CS_IBUF)
+     INV:I->O             10   0.648   0.882  CS_inv1_INV_0 (CS_inv)
+     SRL16E:CE                 0.588          Mshreg_SPIData_3
+    ----------------------------------------
+    Total                      3.387ns (2.085ns logic, 1.302ns route)
+                                       (61.6% logic, 38.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SCK'
+  Total number of paths / destination ports: 1005 / 40
+-------------------------------------------------------------------------
+Offset:              13.070ns (Levels of Logic = 7)
+  Source:            SPIData_5 (FF)
+  Destination:       ZIF20 (PAD)
+  Source Clock:      SCK rising
+
+  Data Path: SPIData_5 to ZIF20
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.591   0.590  SPIData_5 (SPIData_5)
+     LUT2:I0->O            2   0.648   0.450  A0_and0000_SW0 (N21)
+     LUT4:I3->O           25   0.648   1.340  A0_and0000 (A0_and0000)
+     LUT4:I1->O           17   0.643   1.131  A2011 (N1)
+     LUT4:I1->O            2   0.643   0.527  A204 (A204)
+     LUT4:I1->O            1   0.643   0.000  A20191 (A2019)
+     MUXF5:I1->O           1   0.276   0.420  A2019_f5 (A20)
+     IOBUF:I->IO               4.520          ZIF20_IOBUF (ZIF20)
+    ----------------------------------------
+    Total                     13.070ns (8.612ns logic, 4.458ns route)
+                                       (65.9% logic, 34.1% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 118 / 40
+-------------------------------------------------------------------------
+Delay:               8.613ns (Levels of Logic = 5)
+  Source:            MIC26 (PAD)
+  Destination:       ZIF20 (PAD)
+
+  Data Path: MIC26 to ZIF20
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.849   0.730  MIC26_IBUF (MIC26_IBUF)
+     LUT4:I0->O            2   0.648   0.527  A204 (A204)
+     LUT4:I1->O            1   0.643   0.000  A20191 (A2019)
+     MUXF5:I1->O           1   0.276   0.420  A2019_f5 (A20)
+     IOBUF:I->IO               4.520          ZIF20_IOBUF (ZIF20)
+    ----------------------------------------
+    Total                      8.613ns (6.936ns logic, 1.677ns route)
+                                       (80.5% logic, 19.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 12.66 secs
+ 
+--> 
+
+Total memory usage is 280764 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

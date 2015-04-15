@@ -1,0 +1,239 @@
+--------------------------------------------------------------------------------
+Release 14.6 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml FPGA_Code2.twx FPGA_Code2.ncd -o FPGA_Code2.twr
+FPGA_Code2.pcf -ucf FPGA_Code2.ucf
+
+Design file:              FPGA_Code2.ncd
+Physical constraint file: FPGA_Code2.pcf
+Device,package,speed:     xc3s50an,tqg144,-4 (PRODUCTION 1.42 2013-06-08)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock SCK
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+CS          |    1.124(R)|    0.859(R)|SCK_BUFGP         |   0.000|
+MOSI        |    0.160(R)|    0.864(R)|SCK_BUFGP         |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock SCK to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+MIC23       |   16.364(R)|SCK_BUFGP         |   0.000|
+MIC32       |   16.591(R)|SCK_BUFGP         |   0.000|
+MIC33       |   16.227(R)|SCK_BUFGP         |   0.000|
+MIC34       |   15.928(R)|SCK_BUFGP         |   0.000|
+MIC35       |   15.593(R)|SCK_BUFGP         |   0.000|
+MIC36       |   15.821(R)|SCK_BUFGP         |   0.000|
+MIC37       |   15.606(R)|SCK_BUFGP         |   0.000|
+MIC38       |   15.929(R)|SCK_BUFGP         |   0.000|
+MIC39       |   16.365(R)|SCK_BUFGP         |   0.000|
+ZIF0        |   13.707(R)|SCK_BUFGP         |   0.000|
+ZIF1        |   13.907(R)|SCK_BUFGP         |   0.000|
+ZIF2        |   13.517(R)|SCK_BUFGP         |   0.000|
+ZIF3        |   13.835(R)|SCK_BUFGP         |   0.000|
+ZIF4        |   13.201(R)|SCK_BUFGP         |   0.000|
+ZIF5        |   14.168(R)|SCK_BUFGP         |   0.000|
+ZIF6        |   14.107(R)|SCK_BUFGP         |   0.000|
+ZIF7        |   13.419(R)|SCK_BUFGP         |   0.000|
+ZIF9        |   14.203(R)|SCK_BUFGP         |   0.000|
+ZIF10       |   14.072(R)|SCK_BUFGP         |   0.000|
+ZIF11       |   15.698(R)|SCK_BUFGP         |   0.000|
+ZIF12       |   15.988(R)|SCK_BUFGP         |   0.000|
+ZIF13       |   15.314(R)|SCK_BUFGP         |   0.000|
+ZIF14       |   14.252(R)|SCK_BUFGP         |   0.000|
+ZIF15       |   13.166(R)|SCK_BUFGP         |   0.000|
+ZIF16       |   15.934(R)|SCK_BUFGP         |   0.000|
+ZIF17       |   15.437(R)|SCK_BUFGP         |   0.000|
+ZIF18       |   14.563(R)|SCK_BUFGP         |   0.000|
+ZIF19       |   15.014(R)|SCK_BUFGP         |   0.000|
+ZIF20       |   16.788(R)|SCK_BUFGP         |   0.000|
+ZIF21       |   16.820(R)|SCK_BUFGP         |   0.000|
+ZIF22       |   15.133(R)|SCK_BUFGP         |   0.000|
+ZIF23       |   15.798(R)|SCK_BUFGP         |   0.000|
+ZIF24       |   14.663(R)|SCK_BUFGP         |   0.000|
+ZIF25       |   14.297(R)|SCK_BUFGP         |   0.000|
+ZIF26       |   15.018(R)|SCK_BUFGP         |   0.000|
+ZIF27       |   15.074(R)|SCK_BUFGP         |   0.000|
+ZIF28       |   15.882(R)|SCK_BUFGP         |   0.000|
+ZIF29       |   15.957(R)|SCK_BUFGP         |   0.000|
+ZIF30       |   15.096(R)|SCK_BUFGP         |   0.000|
+ZIF39       |   12.686(R)|SCK_BUFGP         |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock SCK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+SCK            |    1.552|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+MIC24          |ZIF30          |    8.107|
+MIC24          |ZIF39          |    8.392|
+MIC25          |ZIF18          |    8.237|
+MIC25          |ZIF20          |   10.015|
+MIC26          |ZIF12          |    8.147|
+MIC26          |ZIF17          |    7.837|
+MIC26          |ZIF19          |    8.393|
+MIC26          |ZIF20          |   10.079|
+MIC27          |ZIF11          |    8.628|
+MIC27          |ZIF16          |    8.370|
+MIC27          |ZIF18          |    7.901|
+MIC28          |ZIF11          |    8.103|
+MIC28          |ZIF13          |    8.180|
+MIC28          |ZIF17          |    8.668|
+MIC29          |ZIF10          |    8.975|
+MIC29          |ZIF16          |    9.327|
+MIC30          |ZIF9           |    8.861|
+MIC30          |ZIF15          |    9.365|
+MIC30          |ZIF17          |    9.435|
+MIC31          |ZIF12          |   10.000|
+MIC31          |ZIF14          |    8.780|
+MIC31          |ZIF16          |   10.744|
+MIC32          |ZIF7           |    8.987|
+MIC32          |ZIF20          |    8.663|
+MIC32          |ZIF28          |    7.502|
+MIC32          |ZIF29          |    7.934|
+MIC33          |ZIF6           |    8.734|
+MIC33          |ZIF21          |    8.592|
+MIC33          |ZIF27          |    9.047|
+MIC33          |ZIF28          |    8.479|
+MIC34          |ZIF5           |    8.747|
+MIC34          |ZIF22          |    9.477|
+MIC34          |ZIF24          |    9.083|
+MIC34          |ZIF26          |    9.562|
+MIC35          |ZIF4           |    8.438|
+MIC35          |ZIF23          |    8.342|
+MIC35          |ZIF25          |    8.533|
+MIC36          |ZIF3           |    8.437|
+MIC36          |ZIF22          |    9.401|
+MIC36          |ZIF24          |    9.035|
+MIC36          |ZIF26          |    9.572|
+MIC37          |ZIF2           |    8.876|
+MIC37          |ZIF21          |    8.867|
+MIC37          |ZIF23          |    8.066|
+MIC37          |ZIF27          |    8.035|
+MIC38          |ZIF1           |    8.789|
+MIC38          |ZIF20          |    9.036|
+MIC38          |ZIF22          |    9.131|
+MIC38          |ZIF28          |    8.896|
+MIC39          |ZIF0           |    9.156|
+MIC39          |ZIF19          |    9.026|
+MIC39          |ZIF21          |    9.096|
+MIC39          |ZIF29          |    7.980|
+WR             |MIC32          |    8.171|
+WR             |MIC33          |    8.180|
+WR             |MIC34          |    8.181|
+WR             |MIC35          |    8.462|
+WR             |MIC36          |    7.902|
+WR             |MIC37          |    8.458|
+WR             |MIC38          |    8.743|
+WR             |MIC39          |    8.750|
+WR             |ZIF0           |    8.141|
+WR             |ZIF1           |    7.518|
+WR             |ZIF2           |    7.790|
+WR             |ZIF3           |    7.857|
+WR             |ZIF4           |    7.864|
+WR             |ZIF5           |    7.790|
+WR             |ZIF6           |    7.840|
+WR             |ZIF7           |    7.828|
+WR             |ZIF19          |    8.484|
+WR             |ZIF20          |    8.126|
+WR             |ZIF21          |    8.250|
+WR             |ZIF22          |    8.534|
+WR             |ZIF23          |    8.523|
+WR             |ZIF24          |    7.620|
+WR             |ZIF25          |    7.949|
+WR             |ZIF26          |    7.946|
+WR             |ZIF27          |    8.215|
+WR             |ZIF28          |    9.322|
+WR             |ZIF29          |    8.405|
+ZIF0           |MIC39          |    9.431|
+ZIF1           |MIC38          |    9.081|
+ZIF2           |MIC37          |    9.024|
+ZIF3           |MIC36          |    8.616|
+ZIF4           |MIC35          |    9.131|
+ZIF5           |MIC34          |    9.962|
+ZIF6           |MIC33          |   10.019|
+ZIF7           |MIC32          |   10.150|
+ZIF8           |MIC23          |    9.607|
+ZIF12          |MIC23          |    9.191|
+ZIF14          |MIC23          |    8.802|
+ZIF18          |MIC23          |    8.721|
+ZIF19          |MIC39          |    9.391|
+ZIF20          |MIC32          |    9.868|
+ZIF20          |MIC38          |    8.742|
+ZIF21          |MIC33          |    8.766|
+ZIF21          |MIC37          |    8.050|
+ZIF21          |MIC39          |    9.064|
+ZIF22          |MIC34          |    9.814|
+ZIF22          |MIC36          |    8.547|
+ZIF22          |MIC38          |    8.035|
+ZIF23          |MIC35          |    7.991|
+ZIF23          |MIC37          |    9.590|
+ZIF24          |MIC34          |   10.104|
+ZIF24          |MIC36          |    9.414|
+ZIF25          |MIC35          |    8.578|
+ZIF26          |MIC34          |    8.564|
+ZIF26          |MIC36          |    9.069|
+ZIF27          |MIC33          |    9.009|
+ZIF27          |MIC37          |    9.246|
+ZIF28          |MIC32          |    8.869|
+ZIF28          |MIC33          |    9.722|
+ZIF28          |MIC38          |    9.191|
+ZIF29          |MIC32          |    9.944|
+ZIF29          |MIC39          |    8.753|
+---------------+---------------+---------+
+
+
+Analysis completed Tue Apr 07 07:16:24 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 170 MB
+
+
+

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Adam Vogel\Dropbox\FPGA_Code2\FPGA_Code2\FPGA_Code2.ncd
+OUTFILE=C:\Users\Adam Vogel\Dropbox\FPGA_Code2\FPGA_Code2\FPGA_Code2.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s50an-4tqg144
+WORKINGDIR=C:\Users\Adam Vogel\Dropbox\FPGA_Code2\FPGA_Code2
+LICENSE=WebPack
+USER_INFO=210790417_0_0_771

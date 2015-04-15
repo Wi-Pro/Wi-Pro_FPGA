@@ -1,0 +1,26 @@
+xst -intstyle ise -ifn "C:/Users/Adam Vogel/Dropbox/FPGA_Code2/FPGA_Code2/FPGA_Code2.xst" -ofn "C:/Users/Adam Vogel/Dropbox/FPGA_Code2/FPGA_Code2/FPGA_Code2.syr" 
+xst -intstyle ise -ifn "C:/Users/Adam Vogel/Dropbox/FPGA_Code2/FPGA_Code2/FPGA_Code2.xst" -ofn "C:/Users/Adam Vogel/Dropbox/FPGA_Code2/FPGA_Code2/FPGA_Code2.syr" 
+xst -intstyle ise -ifn "C:/Users/Adam Vogel/Dropbox/FPGA_Code2/FPGA_Code2/FPGA_Code2.xst" -ofn "C:/Users/Adam Vogel/Dropbox/FPGA_Code2/FPGA_Code2/FPGA_Code2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_Code2.ucf -p xc3s50an-tqg144-4 "FPGA_Code2.ngc" FPGA_Code2.ngd  
+map -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o FPGA_Code2_map.ncd FPGA_Code2.ngd FPGA_Code2.pcf 
+par -w -intstyle ise -ol high -t 1 FPGA_Code2_map.ncd FPGA_Code2.ncd FPGA_Code2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FPGA_Code2.twx FPGA_Code2.ncd -o FPGA_Code2.twr FPGA_Code2.pcf -ucf FPGA_Code2.ucf 
+bitgen -intstyle ise -f FPGA_Code2.ut FPGA_Code2.ncd 
+xst -intstyle ise -ifn "C:/Users/Adam Vogel/Dropbox/FPGA_Code2/FPGA_Code2/FPGA_Code2.xst" -ofn "C:/Users/Adam Vogel/Dropbox/FPGA_Code2/FPGA_Code2/FPGA_Code2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_Code2.ucf -p xc3s50an-tqg144-4 "FPGA_Code2.ngc" FPGA_Code2.ngd  
+map -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o FPGA_Code2_map.ncd FPGA_Code2.ngd FPGA_Code2.pcf 
+par -w -intstyle ise -ol high -t 1 FPGA_Code2_map.ncd FPGA_Code2.ncd FPGA_Code2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FPGA_Code2.twx FPGA_Code2.ncd -o FPGA_Code2.twr FPGA_Code2.pcf -ucf FPGA_Code2.ucf 
+xst -intstyle ise -ifn "C:/Users/Adam Vogel/Dropbox/FPGA_Code2/FPGA_Code2/FPGA_Code2.xst" -ofn "C:/Users/Adam Vogel/Dropbox/FPGA_Code2/FPGA_Code2/FPGA_Code2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_Code2.ucf -p xc3s50an-tqg144-4 "FPGA_Code2.ngc" FPGA_Code2.ngd  
+map -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o FPGA_Code2_map.ncd FPGA_Code2.ngd FPGA_Code2.pcf 
+par -w -intstyle ise -ol high -t 1 FPGA_Code2_map.ncd FPGA_Code2.ncd FPGA_Code2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FPGA_Code2.twx FPGA_Code2.ncd -o FPGA_Code2.twr FPGA_Code2.pcf -ucf FPGA_Code2.ucf 
+bitgen -intstyle ise -f FPGA_Code2.ut FPGA_Code2.ncd 
+bitgen -intstyle ise -f FPGA_Code2.ut FPGA_Code2.ncd 
+xst -intstyle ise -ifn "C:/Users/Adam Vogel/Dropbox/FPGA_Code2/FPGA_Code2/FPGA_Code2.xst" -ofn "C:/Users/Adam Vogel/Dropbox/FPGA_Code2/FPGA_Code2/FPGA_Code2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_Code2.ucf -p xc3s50an-tqg144-4 "FPGA_Code2.ngc" FPGA_Code2.ngd  
+map -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o FPGA_Code2_map.ncd FPGA_Code2.ngd FPGA_Code2.pcf 
+par -w -intstyle ise -ol high -t 1 FPGA_Code2_map.ncd FPGA_Code2.ncd FPGA_Code2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FPGA_Code2.twx FPGA_Code2.ncd -o FPGA_Code2.twr FPGA_Code2.pcf -ucf FPGA_Code2.ucf 
+bitgen -intstyle ise -f FPGA_Code2.ut FPGA_Code2.ncd 
